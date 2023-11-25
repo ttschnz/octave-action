@@ -1,0 +1,19 @@
+name: Test Action
+
+# Trigger this workflow either manually or when a new change is pushed
+on:
+  push:
+    workflow_dispatch:
+    branches: [ main ]
+    schedule:
+    # Run at 10:00 on every Wednesday
+    - cron: "00 10 * * WED"
+
+jobs:
+  test-octave-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup octave action
+        uses: repos4u/octave-action@v1 # own action from this repo
+        with:
+          command: disp('Action is working as expected')

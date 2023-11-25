@@ -1,0 +1,13 @@
+# action.yml
+name: 'Setup-Octave'
+description: Action for setting up Octave in a docker container
+inputs:
+  command:
+    description: Octave command for executing in GH runner
+    required: true
+    default: disp('Supply any Octave command for executing')
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: # Command to be passed to the Docker container
+    - ${{ inputs.command }}
