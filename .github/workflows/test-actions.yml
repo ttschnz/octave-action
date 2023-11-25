@@ -3,11 +3,7 @@ name: Test Action
 # Trigger this workflow either manually or when a new change is pushed
 on:
   push:
-    workflow_dispatch:
-    branches: [ main ]
-    schedule:
-    # Run at 10:00 on every Wednesday
-    - cron: "00 10 * * WED"
+  workflow_dispatch:
 
 jobs:
   test-octave-action:
