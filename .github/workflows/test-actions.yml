@@ -9,7 +9,7 @@ jobs:
   test-octave-action:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup octave action
+      - name: Run Octave command/script
         uses: repos4u/octave-action@v1 # own action from this repo
         with:
           command: disp('Action is working as expected')
