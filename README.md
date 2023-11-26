@@ -1,5 +1,5 @@
 # Action for Running Octave
-[![Test Action](https://github.com/repos4u/octave-action/actions/workflows/test-actions.yml/badge.svg?event=push&status=success&color=purple&logo=code)](https://github.com/repos4u/octave-action/actions/workflows/test-actions.yml)
+[![Test Action](https://github.com/repos4u/octave-action/actions/workflows/test-actions.yml/badge.svg)](https://github.com/repos4u/octave-action/actions/workflows/test-actions.yml)
 
 This action enables to run GNU Octave tests on [GitHub&reg;-hosted](https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners) runners:
 

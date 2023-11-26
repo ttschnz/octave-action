@@ -11,3 +11,6 @@ runs:
   image: 'Dockerfile'
   args: # Command to be passed to the Docker container
     - ${{ inputs.command }}
+branding:
+  icon: 'code'
+  color: 'purple'
