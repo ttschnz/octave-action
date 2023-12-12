@@ -9,7 +9,9 @@ jobs:
   test-octave-action:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Octave command/script
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run Octave action and test command/script
         uses: ./ # run action.yml from the root of this repo
         with:
           command: disp('Action is working as expected')
