@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Octave command/script
-        uses: repos4u/octave-action@v1 # own action from this repo
+        uses: ./ # run action.yml from the root of this repo
         with:
           command: disp('Action is working as expected')
