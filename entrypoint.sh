@@ -1,9 +1,9 @@
 #!/bin/sh -l
 
-output=$(octave --eval "$1")
-echo "Octave output:\n$output"
+output=$(octave --eval "$1" 2>&1)
+echo -e "Octave output:\n$output"
 
-string_to_check="Error"
+string_to_check="$2"
 # Check if the string was found
 if echo "$output" | grep -q "$string_to_check"; then
     exit 1
