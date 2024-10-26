@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 output=$(octave --eval "$1" 2>&1)
-echo -e "Octave output:\n$output"
+echo "Octave output:\n$output"
 
 string_to_check="$2"
 # Check if the string was found
